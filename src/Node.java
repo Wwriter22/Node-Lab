@@ -18,8 +18,8 @@ public class Node<T> {
         prev = null;
         next = null;
     }
-    public Node(T t){
-        this.data =t;
+    public Node(T Data){
+        this.data =Data;
     }
     public Node(T data, Node<T> prev, Node<T> next){
         this.data = data;
@@ -38,7 +38,7 @@ public class Node<T> {
     public T set_data(T data){
         return this.data = data;
     }
-    public Node<T> set_dog(Node<T> prev){
+    public Node<T> set_prev(Node<T> prev){
         return this.prev = prev;
     }
     public Node<T> set_next(Node<T> next){
@@ -63,3 +63,4 @@ public class Node<T> {
         return Objects.hash(data, prev, next);
     }
 }
+
